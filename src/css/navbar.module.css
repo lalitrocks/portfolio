@@ -1,0 +1,12 @@
+
+#backgroundColor{
+    color: #c3bfbf;
+    height: 10vh;
+    font-weight: bold;
+    
+    
+}
+.navbar{
+    position: static;
+    top: 0;
+}

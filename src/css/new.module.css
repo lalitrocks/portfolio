@@ -1,0 +1,162 @@
+.green {
+    color: #4bffa5;
+}
+
+.grey {
+    color: #1e1e1e;
+}
+
+
+.bImage {
+    background-color: #0c0c0c;
+    color: #c3bfbf;
+}
+
+.backPhoto {
+    position: absolute;
+    left: 130px;
+    z-index: 105;
+    aspect-ratio: 0.9/1;
+    height: 85vh;
+}
+
+
+.divContainer {
+    color: #c3bfbf;
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+
+
+}
+
+.address {
+    position: absolute;
+    bottom: 30px;
+}
+
+.desc {
+    position: absolute;
+    top: 50%;
+    right: 21vw;
+    z-index: 110;
+    width: 445px;
+
+}
+
+/*------------------------ follow me ---------------------- */
+.fixedContact {
+    position: fixed;
+    width: 36px;
+    bottom: 0;
+    right: 14px;
+    color: white;
+}
+
+.fixedAnchor {
+    text-decoration: none;
+    color: white;
+
+}
+
+.fixedAnchor:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+.spanRotate {
+    transform: rotate(90deg);
+    margin-top: 35px;
+}
+
+.whiteDiv {
+    height: 5px;
+    width: 60px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    margin: 37px 0px 37px -11px;
+    transform: rotate(90deg);
+}
+
+.icons {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+
+}
+
+/*-------------------- moving ball -------------------*/
+.ball {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    z-index: 200;
+    opacity: .4;
+    background-color: #4bffa5;
+    border-radius: 50%;
+    pointer-events: none;
+    transition-property: height, width;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.02, 1.2, 0.8, 1);
+
+}
+
+/*--------------------------- mobileview -------------------------------*/
+
+.mobContainer{
+    min-height: 90vh;
+}
+.mobImgdiv{
+    display: flex;
+    justify-content: center;
+    
+}
+.mobImg{
+  
+    height: 500px;
+}
+
+
+.descMob {
+    margin-left: 60px;
+    margin-right: 60px;
+margin-top: -40px;
+    color: #c3bfbf;
+    font-size: 18px;
+    
+}
+
+@media screen and (min-width:1300px) {
+    .bImage {
+        background-size: 100% 100%;
+    }
+    
+}
+
+@media screen and (max-width:1300px) {
+    .desc{
+        right:5vw;
+    }
+}
+
+@media screen and (max-width:1062px) {
+    .backPhoto {
+        left: 130px;
+        height: 80vh;
+        aspect-ratio: 0.8/1;
+    }
+}
+
+@media screen and (max-width:913px) {
+    .desc{
+       width: 340px;
+    }
+}
+
+@media screen and (max-width:816px) {
+    .backPhoto{
+        opacity: .4;
+    }
+}

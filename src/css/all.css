@@ -1,0 +1,196 @@
+.active {
+    color: white !important;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*------------------- roll text ------------------*/
+.rollTextUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+.rollTextDown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+.rollDiv:hover .rollTextUp {
+    transform: translateY(-30px);
+
+}
+
+.rollDiv:hover .rollTextDown {
+    transform: translateY(-30px);
+
+}
+
+.rollDiv {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+
+}
+
+.rollTextAnchor {
+    color: #c3bfbf;
+    text-decoration: none;
+}
+
+
+.education {
+    width: 80px;
+}
+
+.contact,
+.about {
+    width: 95px;
+}
+
+.home {
+    width: 60px;
+}
+
+.cv {
+    width: 150px;
+}
+
+
+.fa-bars{
+    color: white;
+}
+.mt-21px{
+    margin-top: -21px;
+}
+/*------------------- side reaveal text ------------------*/
+.outerAnimatedDiv {
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+    right: 23vw;
+    font-size: 50px;
+    font-weight: 700;
+    z-index: 110;
+}
+.outertext{
+    top: -13px;
+    position: relative;
+}
+.animatedText {
+    width: 370px;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.animatedText li {
+    list-style: none;
+    position: relative;
+    top: 0px;
+    animation: rollUp 6s steps(2) infinite;
+    color: #4bffa5;
+
+}
+
+@keyframes rollUp {
+    100% {
+        top: -124px;
+    }
+}
+
+.animatedText span {
+    position: relative;
+    margin-left: 10px;
+}
+
+.animatedText span::after {
+    content: "";
+    position: absolute;
+    background-color: #0c0c0c;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animate 3s steps(12) infinite;
+
+}
+
+@keyframes animate {
+    100% {
+        left: 370px
+    }
+
+
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: #0c0c0c;
+    padding-bottom: 20px;
+    z-index: 100;
+}
+
+.valid{
+    border-color: Green !important;
+    
+}
+
+.inValid{
+    border-color: red !important;
+    color: red !important;
+}
+.main-error-div{
+    display: none;
+    margin-top: 40px;
+}
+
+
+.error-lower-name{
+    display: none;
+    margin: 13px 0px;
+    color: red;
+}
+.error-lower-company{
+    display: none;
+    margin: 13px 0px;
+    color: red;
+}
+.alert-top{
+    position: fixed;
+    top: 68px;
+    z-index: 200;
+    width: 98%;
+    left: 1%;
+    display: none;
+}
+.main-error{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1300px) {
+    .outerAnimatedDiv{
+        right: 7vw;
+    }
+}
+
+@media screen and (max-width:816px) {
+    .outerAnimatedDiv{
+        bottom: 70px;
+    }
+}
